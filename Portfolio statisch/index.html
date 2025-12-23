@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel = "stylesheet" href = "style.css">
+        <title>Testpagina</title>
+    </head>
+    <body class = "bg-[#242424] text-[#8329D2]">
+        <!-- Header -->
+        <div class="header bg-[#8329D2] sticky top-0">
+            <div class="flex items-center place-content-between max-w-9/10 lg:max-w-8/10 mx-auto py-2">
+                <div class="max-w-44" >
+                    <a href="#">
+                        <h1 class="text-shadow-outline-mixed">Barrie Doornbos</h1>
+                    </a>
+                </div>
+                <div class="hidden lg:block">
+                    <button class="bg-black text-[#0089FA] py-2 px-8 rounded-xl">Contact</button>
+                </div>
+
+                <div class=" lg:hidden">
+                    <button id="hamburgerMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-12 h-12 text-[#242424]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop sidemenu -->
+        <div class="sideMenu hidden lg:block fixed right-10 flex justify-items-end">
+            <a href="#intro" class="sideNav flex flex-row items-center transition-all duration-500 overflow-hidden w-6 space-x-4 my-3 justify-end">
+                <p class="navText text-nowrap font-bold text-[#0089FA] text-shadow-outline-darkblue">Introductie</p>
+                <div class="navCircle min-w-6 h-6 rounded-full border-2 border-[#3700FF]"></div>
+            </a>
+            <a href="#overMij" class="sideNav flex flex-row items-center transition-all duration-500 overflow-hidden w-6 space-x-4 my-3 justify-end">
+                <p class="navText text-nowrap font-bold text-[#0089FA] text-shadow-outline-darkblue">Over mij</p>
+                <div class="navCircle min-w-6 h-6 rounded-full border-2 border-[#3700FF]"></div>
+            </a>
+            <a href="#skills" class="sideNav xl:hidden flex flex-row items-center transition-all duration-500 overflow-hidden w-6 space-x-4 my-3 justify-end">
+                <p class="navText text-nowrap font-bold text-[#0089FA] text-shadow-outline-darkblue">Skills</p>
+                <div class="navCircle min-w-6 h-6 rounded-full border-2 border-[#3700FF]"></div>
+            </a>
+            <a href="#projecten" class="sideNav flex flex-row items-center transition-all duration-500 overflow-hidden w-6 space-x-4 my-3 justify-end">
+                <p class="navText text-nowrap font-bold text-[#0089FA] text-shadow-outline-darkblue">Projecten</p>
+                <div class="navCircle min-w-6 h-6 rounded-full border-2 border-[#3700FF]"></div>
+            </a>
+        </div>
+
+        <!-- Text blok introductie -->
+        <div id="intro" class="grid lg:grid-cols-2 gap shadow-[0px_0px_12px_12px] shadow-[#8329D2] max-w-9/10 lg:max-w-8/10 mx-auto p-5 lg:p-10 rounded-lg mt-10 lg:mt-20">
+            <div class="mx-auto w-full max-w-9/10 lg:max-w-8/10 mb-5 lg:mb-0">
+                <img src="https://picsum.photos/400/400" alt="Mooie afbeelding" class="w-full object-contain rounded-lg max-h-96 lg:max-h-full">
+            </div>
+            <div class="flex flex-col justify-center lg:items-start self-center lg:order-first lg max-w-9/10 lg:max-w-8/10 mx-auto">
+                <h2 class="text-2xl lg:text-4xl font-bold mb-5 text-shadow-outline-lightblue">Barrie Doornbos</h2>
+                <h3 class="typewriter -z-10 text-lg lg:text-2xl mb-5 text-[#3700FF] text-shadow-outline-lightblue"></h3>
+                <p class="text-md lg:text-lg text-[#0089FA] mb-5 text-shadow-outline-darkblue">Dit is een statische pagina die ik heb gemaakt om mijn kennis van HTML, CSS en JavaScript te testen. Op deze pagina vind je verschillende secties met informatie over mij, mijn vaardigheden en mijn portfolio. Ik hoop dat je het leuk vindt om mijn werk te bekijken!</p>
+                <a href="#" class="bg-black text-[#0089FA] text-center py-2 px-8 rounded-lg">Bekijk mijn CV</a>
+            </div>
+        </div>
+
+        <!-- Blok 'Over mij' en 'Skills' -->
+        <div class="grid xl:grid-cols-3 max-w-9/10 lg:max-w-8/10 mx-auto gap-20">
+            <div id="overMij" class="flex flex-col items-center xl:col-span-2 shadow-[0px_0px_12px_12px] shadow-[#8329D2] p-5 lg:p-10 rounded-lg mt-20">
+                <h2 class="text-2xl lg:text-4xl font-bold text-[#3700FF] text-shadow-outline-lightblue mb-5">Over mij</h2>
+                <p class="max-w-9/10 lg:max-w-8/10 text-md lg:text-lg h-full content-center text-[#0089FA] text-shadow-outline-darkblue">
+                    Hallo! Mijn naam is Barrie Doornbos en ik ben een enthousiaste webontwikkelaar met een passie voor het creëren van mooie en functionele websites. Ik heb ervaring met HTML, CSS en JavaScript, en ik ben altijd op zoek naar nieuwe uitdagingen om mijn vaardigheden te verbeteren. In mijn vrije tijd geniet ik van het verkennen van nieuwe technologieën en het werken aan persoonlijke projecten. Bedankt voor het bezoeken van mijn pagina!
+                </p>
+            </div>
+
+            <div id="skills" class="flex flex-col items-center w-full shadow-[0px_0px_12px_12px] shadow-[#8329D2] py-5 lg:py-10 rounded-lg xl:mt-20">
+                <h2 class="text-2xl lg:text-4xl font-bold text-[#3700FF] text-shadow-outline-lightblue mb-5">Skills</h2>
+                <div class="flex flex-col items-center w-full">
+                    <p class="text-2xl text-[#0089FA] text-shadow-outline-darkblue mb-2">Front-end</p>
+                    <div class="flex justify-evenly space-x-8 mb-5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5 Logo" class="w-16 h-16 my-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3 Logo" class="w-16 h-16 my-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="w-16 h-16 my-2">
+                    </div>
+                    <p class="text-2xl text-[#0089FA] text-shadow-outline-darkblue mb-2">Back-end</p>
+                    <div class="flex justify-evenly space-x-8">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Logo" class="w-16 h-16 my-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_C_sharp.png" alt="C# Logo" class="w-16 h-16 my-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="w-16 h-16 my-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projecten -->
+        <div id="projecten" class="shadow-[0px_0px_12px_12px] shadow-[#8329D2] max-w-9/10 lg:max-w-8/10 mx-auto mb-20 py-5 lg:p-10 rounded-lg mt-20">
+            <h2 class="text-2xl lg:text-4xl font-bold justify-self-center text-[#3700FF] text-shadow-outline-lightblue mb-5">Projecten</h2>
+            <p class="max-w-9/10 flex justify-center mx-auto text-md lg:text-lg text-[#0089FA] text-shadow-outline-darkblue mb-5">Een stukje text en uitleg over de projecten in de carousel</p>
+            <!-- Mobiel -->
+            <div class="carousel flex overflow-x-scroll overflow-y-hidden min-h-[400px] px-1/20 mx-auto snap-x lg:hidden" id="carousel">
+                <div class="flex-shrink-0 w-2/10 h-md"></div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="1">
+                    <div class="bg-[url(https://picsum.photos/800/400)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue w-full h-full transition-all duration-1000 opacity-0">Project 1</h2>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="2">
+                    <div class="bg-[url(https://picsum.photos/700/400)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 2</p>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="3">
+                    <div class="bg-[url(https://picsum.photos/600/400)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 3</p>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="4">
+                    <div class="bg-[url(https://picsum.photos/500/400)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 4</p>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="5">
+                    <div class="bg-[url(https://picsum.photos/400/400)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 5</p>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="6">
+                    <div class="bg-[url(https://picsum.photos/900/400)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 6</p>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="7">
+                    <div class="bg-[url(https://picsum.photos/800/300)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 7</p>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="8">
+                    <div class="bg-[url(https://picsum.photos/700/300)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 8</p>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="9">
+                    <div class="bg-[url(https://picsum.photos/600/300)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 9</p>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="10">
+                    <div class="bg-[url(https://picsum.photos/500/300)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 10</p>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="11">
+                    <div class="bg-[url(https://picsum.photos/400/300)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 11</p>
+                    </div>
+                </div>
+                <div class="mobileCarousel carouselItem min-w-3/4 mx-4 md:mx-2 snap-center transition-all duration-400" data-id="12">
+                    <div class="bg-[url(https://picsum.photos/300/300)] bg-cover h-full">
+                        <p class="carouselText flex items-center justify-center text-2xl text-[#0089FA] text-shadow-outline-darkblue h-full transition-all duration-1000 opacity-0">Project 12</p>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 w-2/10 h-[460px]"></div>
+            </div>
+
+            <!-- Desktop -->
+            <div id="carouselContainer" class="carousel max-w-9/10 h-[300px] m-auto overflow-x-scroll hidden lg:block">
+                <div class="flex h-full">
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/800/400)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="1">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 1</p>
+                            <button class="flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3 hover:cursor-pointer">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/700/400)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="2">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 2</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/600/400)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="3">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 3</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/500/400)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="4">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 4</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/400/400)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="5">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 5</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/900/400)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="6">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 6</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/800/300)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="7">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 7</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/700/300)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="8">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 8</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/600/300)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="9">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 9</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/500/300)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="10">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 10</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/400/300)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="11">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 11</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                    <div class="itemContainer flex bg-[url(https://picsum.photos/300/300)] bg-cover bg-center transition-all duration-1000 min-w-1/10 border border-[#3700FF]">
+                        <div class="desktopCarousel carouselItem w-full bg-black/50 transition hover:delay-700 duration-300 flex opacity-0 flex-col hover:cursor-pointer" data-id="12">
+                            <p class="w-full h-[80%] flex justify-center items-center text-white">Project 12</p>
+                            <button class="hover:cursor-pointer flex self-center justify-center items-center w-3/4 rounded-xl bg-black text-white p-3">Leer meer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block max-w-9/10 mx-auto mt-5">
+                <button id="scrollLeft" class="text-[#3700FF] text-shadow-outline-lightblue hover:cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
+                        <path fill-rule="evenodd" d="M10.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L12.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M4.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L6.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                    </svg>
+
+                </button>
+                <button id="scrollRight" class="text-[#3700FF] text-shadow-outline-lightblue hover:cursor-pointer float-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
+                        <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-20 mb-10">
+            <a href="https://github.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512" stroke-width="2.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512" stroke-width="2.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                    <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                </svg>                    
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" stroke-width="2.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Mobiel menu -->
+        <div id="mobileNav" class="bg-[#8329D2] text-[#0089FA] lg:hidden fixed transition-all duration-250 w-full h-full -top-full left-0">
+            <div class="max-w-9/10 mx-auto">
+                <div class="flex my-2 place-content-between" >
+                    <div class="max-w-44 flex items-center justify-between">
+                        <a href="#">
+                            <h1 class="text-shadow-outline-darkblue">Barrie</h1>
+                            <h1 class="text-shadow-outline-darkblue">Doornbos</h1>
+                        </a>
+                    </div>
+
+                    <button id="closeMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-12 h-12 text-[#242424]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                </div>
+
+                <div class="text-3xl flex flex-col items-center gap-10 mt-10">
+                    <a href="#intro" class="mobileMenuItem">Introductie</a>
+                    <a href="#overMij" class="mobileMenuItem">Over mij</a>
+                    <a href="#skills" class="mobileMenuItem">Skills</a>
+                    <a href="#projecten" class="mobileMenuItem">Projecten</a>
+                    <a href="#" class="mobileMenuItem">Contact</a>
+                </div>
+
+                <div class="flex justify-evenly absolute w-9/10 mx-auto bottom-5 py-3 gap-10 bg-black rounded-md">
+                    <a href="https://github.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512" stroke-width="2.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512" stroke-width="2.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                        </svg>                    
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" stroke-width="2.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div id="project" class="project bg-black fixed w-full h-full top-0 left-0 opacity-50 hidden"></div>
+            <div class="projectCard size-8/10 lg:size-6/10 mx-auto lg:mt-20 text-center text-white bg-[#0089FA] rounded-xl transition-all duration-1000 fixed top-full left-1/10 lg:left-2/10">
+                <div id="closeCard" class="absolute right-3 top-3 hover:cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-black rounded-full">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <img id="projectImage" src="" alt="Random afbeelding" class="w-full h-4/10 object-cover rounded-t-xl">
+                <h2 id="projectTitle" class="flex justify-center items-center text-3xl w-full h-1/10"></h2>
+                <div class="flex-grow border border-black"></div>
+                <p id="projectDescription" class="w-full h-4/10"></p>
+                <button id="buttonLink" class="hover:cursor-pointer w-50 rounded-xl bg-black text-white p-3">Bekijk website</button>
+            </div>
+        </div>
+
+    <script src="main.js"></script>
+
+    </body>
+</html>

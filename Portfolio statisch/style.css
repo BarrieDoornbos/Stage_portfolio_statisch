@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: frijole, sans-serif;
+}
+
+h1{
+    font-size: 24px;
+}
+
+p{
+    font-family: 'Josefin Slab', serif;
+}
+
+.text-shadow-outline-mixed {
+    text-shadow:
+    2px 2px 0 #0089FA,
+    -2px -2px 0 #3700FF,
+    2px -2px 0 #0089FA,
+    -2px 2px 0 #3700FF,
+    2px 0 0 #0089FA,
+    -2px 0 0 #3700FF,
+    0 2px 0 #0089FA,
+    0 -2px 0 #3700FF;
+}
+
+.text-shadow-outline-lightblue {
+    text-shadow:
+    1px 1px 0 #0089FA,
+    -1px -1px 0 #0089FA,
+    1px -1px 0 #0089FA,
+    -1px 1px 0 #0089FA,
+    1px 0 0 #0089FA,
+    -1px 0 0 #0089FA,
+    0 1px 0 #0089FA,
+    0 -1px 0 #0089FA;
+}
+
+.text-shadow-outline-darkblue {
+    text-shadow:
+    1px 1px 0 #3700FF,
+    -1px -1px 0 #3700FF,
+    1px -1px 0 #3700FF,
+    -1px 1px 0 #3700FF,
+    1px 0 0 #3700FF,
+    -1px 0 0 #3700FF,
+    0 1px 0 #3700FF,
+    0 -1px 0 #3700FF;
+}
+
+.text-shadow-outline-purple {
+    text-shadow:
+    1px 1px 0 #8329D2,
+    -1px -1px 0 #8329D2,
+    1px -1px 0 #8329D2,
+    -1px 1px 0 #8329D2,
+    1px 0 0 #8329D2,
+    -1px 0 0 #8329D2,
+    0 1px 0 #8329D2,
+    0 -1px 0 #8329D2;
+}
+
+.sideMenu {
+  align-self: anchor-center;
+}
+
+@keyframes typing {
+    0%, 24.5% { content: ""; }
+    0.5%, 24% { content: "S"; }
+    1%, 23.5% { content: "So"; }
+    1.5%, 23% { content: "Sof"; }
+    2%, 22.5% { content: "Soft"; }
+    2.5%, 22% { content: "Softw"; }
+    3%, 21.5% { content: "Softwa"; }
+    3.5%, 21% { content: "Softwar"; }
+    4%, 20.5% { content: "Software"; }
+    4.5%, 20% { content: "Software d"; }
+    5%, 19.5% { content: "Software de"; }
+    5.5%, 19% { content: "Software dev"; }
+    6%, 18.5% { content: "Software deve"; }
+    6.5%, 18% { content: "Software devel"; }
+    7%, 17.5% { content: "Software develo"; }
+    7.5%, 17% { content: "Software develop"; }
+    8%, 16.5% { content: "Software develope"; }
+    8.5%, 16% { content: "Software developer"; }
+
+    29.5%, 54% { content: ""; }
+    30%, 53.5% { content: "B"; }
+    30.5%, 53% { content: "Bi"; }
+    31%, 52.5% { content: "Bit"; }
+    31.5%, 52% { content: "Bit A"; }
+    32%, 51.5% { content: "Bit Ac"; }
+    32.5%, 51% { content: "Bit Aca"; }
+    33%, 50.5% { content: "Bit Acad"; }
+    33.5%, 50% { content: "Bit Acade"; }
+    34%, 49.5% { content: "Bit Academ"; }
+    34.5%, 49% { content: "Bit Academy"; }
+    35%, 48.5% { content: "Bit Academy s"; }
+    35.5%, 48% { content: "Bit Academy st"; }
+    36%, 47.5% { content: "Bit Academy stu"; }
+    36.5%, 47% { content: "Bit Academy stud"; }
+    37%, 46.5% { content: "Bit Academy stude"; }
+    37.5%, 46% { content: "Bit Academy studen"; }
+    38%, 45.5% { content: "Bit Academy student"; }
+
+
+    60%, 94.5% { content: ""; }
+    60.5%, 94% { content: "K"; }
+    61%, 93.5% { content: "Kr"; }
+    61.5%, 93% { content: "Kre"; }
+    62%, 92.5% { content: "Krea"; }
+    62.5%, 92% { content: "Kreat"; }
+    63%, 91.5% { content: "Kreati"; }
+    63.5%, 91% { content: "Kreatie"; }
+    64%, 90.5% { content: "Kreatief"; }
+    64.5%, 90% { content: "Kreatief M"; }
+    65%, 89.5% { content: "Kreatief Me"; }
+    65.5%, 89% { content: "Kreatief Med"; }
+    66%, 88.5% { content: "Kreatief Medi"; }
+    66.5%, 88% { content: "Kreatief Media"; }
+    67%, 87.5% { content: "Kreatief Mediad"; }
+    67.5%, 87% { content: "Kreatief Mediade"; }
+    68%, 86.5% { content: "Kreatief Mediades"; }
+    68.5%, 86% { content: "Kreatief Mediadesi"; }
+    69%, 85.5% { content: "Kreatief Mediadesig"; }
+    69.5%, 85% { content: "Kreatief Mediadesign"; }
+    70%, 84.5% { content: "Kreatief Mediadesign "; }
+    70.5%, 84% { content: "Kreatief Mediadesign s"; }
+    71%, 83.5% { content: "Kreatief Mediadesign st"; }
+    71.5%, 83% { content: "Kreatief Mediadesign sta"; }
+    72%, 82.5% { content: "Kreatief Mediadesign stag"; }
+    72.5%, 82% { content: "Kreatief Mediadesign staga"; }
+    73%, 81.5% { content: "Kreatief Mediadesign stagai"; }
+    73.5%, 81% { content: "Kreatief Mediadesign stagair"; }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+.typewriter::before {
+  content: "";
+  animation: typing 15s infinite;
+}
+
+.typewriter {
+    animation: flash 1s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 2px solid;
+  animation: blink 0.7s linear infinite;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+    border-right: none;
+  }
+  
+  @keyframes textPopup {
+    0%, 100% { content: "software developer"; }
+    33% { content: "Bit Academy student"; }
+    67% { content: "Kreatief Mediadesign stagair"; }
+  }
+
+  .typewriter::before {
+    animation: textPopup 12s linear infinite;
+  }
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
